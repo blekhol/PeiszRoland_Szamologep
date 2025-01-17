@@ -22,5 +22,10 @@ namespace PeiszRoland_Szamologep
 		{
 			return a - b;
 		}
+
+		static int Szorzas(int a, int b)
+		{
+			return a * b;
+		}
 	}
 }
