@@ -27,5 +27,10 @@ namespace PeiszRoland_Szamologep
 		{
 			return a * b;
 		}
+
+		static int Osztas(int a, int b)
+		{
+			return a / b;
+		}
 	}
 }
