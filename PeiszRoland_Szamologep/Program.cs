@@ -32,5 +32,12 @@ namespace PeiszRoland_Szamologep
 		{
 			return a / b;
 		}
+
+		static int Szazalek(int a, int b)
+		{
+			return a/b * 100;
+		}
+
+		
 	}
 }
