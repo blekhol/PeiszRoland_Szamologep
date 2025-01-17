@@ -10,7 +10,7 @@ namespace PeiszRoland_Szamologep
 	{
 		static void Main(string[] args)
 		{
-
+			
 		}
 
 		static int Osszeadas(int a, int b)
@@ -38,6 +38,28 @@ namespace PeiszRoland_Szamologep
 			return a/b * 100;
 		}
 
-		
+		static void Indit()
+		{
+			Console.WriteLine("Kérem adja meg az első számot: ");
+			int a = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("Kérem adja meg a második számot: ");
+			int b = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("Az elvégzendő művelet jele: ");
+			string jel = Console.ReadLine().Trim();
+
+			float ered = 0;
+
+			switch (jel)
+			{
+				case "+": ered = Osszeadas(a, b); break;
+				case "-": ered = Kivonas(a, b); break;
+				case "*": ered = Szorzas(a, b); break;
+				case "/": ered = Osztas(a, b); break;
+				case "%": ered = Szazalek(a, b); break;
+				default: break;
+			}
+
+			Console.WriteLine($"Az eredmény: {ered}");
+		}
 	}
 }
