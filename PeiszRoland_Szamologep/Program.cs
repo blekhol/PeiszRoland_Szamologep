@@ -10,40 +10,43 @@ namespace PeiszRoland_Szamologep
 	{
 		static void Main(string[] args)
 		{
-			
+			Indit();
+
+			Console.ReadKey();
 		}
 
-		static int Osszeadas(int a, int b)
+		static float Osszeadas(float a, float b)
 		{
             return a + b;
         }
 
-		static int Kivonas(int a, int b)
+		static float Kivonas(float a, float b)
 		{
 			return a - b;
 		}
 
-		static int Szorzas(int a, int b)
+		static float Szorzas(float a, float b)
 		{
 			return a * b;
 		}
 
-		static int Osztas(int a, int b)
+		static float Osztas(float a, float b)
 		{
 			return a / b;
 		}
 
-		static int Szazalek(int a, int b)
+		static float Szazalek(float a, float b)
 		{
 			return a/b * 100;
 		}
 
+
 		static void Indit()
 		{
 			Console.WriteLine("Kérem adja meg az első számot: ");
-			int a = Convert.ToInt32(Console.ReadLine());
+			float a = float.Parse(Console.ReadLine());
 			Console.WriteLine("Kérem adja meg a második számot: ");
-			int b = Convert.ToInt32(Console.ReadLine());
+			float b = float.Parse(Console.ReadLine());
 			Console.WriteLine("Az elvégzendő művelet jele: ");
 			string jel = Console.ReadLine().Trim();
 
